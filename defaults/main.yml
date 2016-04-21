@@ -1,6 +1,9 @@
 ---
 # defaults file for monsieurbiz.common
 
+# 1 hour of valid cache time
+monsieurbiz_common_cache_valid_time: 3600
+
 monsieurbiz_common_packages:
   - vim
   - build-essential

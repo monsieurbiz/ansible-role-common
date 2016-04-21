@@ -3,7 +3,7 @@
 
 - name: Update the server
   sudo: yes
-  apt: update_cache=true
+  apt: update_cache=true cache_valid_time={{ monsieurbiz_common_cache_valid_time }}
   tags: [common, update]
 
 - name: Upgrade the server packages
