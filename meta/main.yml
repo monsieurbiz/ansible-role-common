@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Jacques Bodin-Hullin
+  description: |
+    This role installs few often used programs and upgrade
+    the packages installed on the server.
+  company: Monsieur Biz
+
+  license: MIT
+  issue_tracker_url: https://github.com/monsieurbiz/ansible-role-common
+  min_ansible_version: 2.0
+  github_branch: master
+
+  platforms:
+  - name: Debian
+    versions:
+      - jessie
+
+  galaxy_tags:
+    - monsieurbiz
+    - common
+
+dependencies: []

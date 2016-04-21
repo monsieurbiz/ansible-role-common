@@ -1,0 +1,19 @@
+---
+# defaults file for monsieurbiz.common
+
+monsieurbiz_common_packages:
+  - vim
+  - build-essential
+  - tmux
+  - wget
+  - curl
+  - screen
+  - tidy
+  - htop
+  - lynx
+  - tig
+  - tree
+  - rsync
+  - gzip
+  - less
+  - gpg

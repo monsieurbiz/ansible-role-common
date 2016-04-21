@@ -1,0 +1,18 @@
+---
+# tasks file for monsieurbiz.common
+
+- name: Update the server
+  sudo: yes
+  apt: update_cache=true
+  tags: [common, update]
+
+- name: Upgrade the server packages
+  sudo: yes
+  apt: upgrade=yes
+  tags: [common, update]
+
+- name: Install some packages
+  sudo: yes
+  apt: name={{item}} state=latest
+  with_items: "{{ monsieurbiz_common_packages }}"
+  tags: [common]
