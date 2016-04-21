@@ -4,6 +4,13 @@
 # 1 hour of valid cache time
 monsieurbiz_common_cache_valid_time: 3600
 
+# Do we update?
+monsieurbiz_common_update: yes
+
+# Do we upgrade?
+monsieurbiz_common_upgrade: yes
+
+# Packages list
 monsieurbiz_common_packages:
   - vim
   - build-essential

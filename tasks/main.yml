@@ -4,11 +4,13 @@
 - name: Update the server
   sudo: yes
   apt: update_cache=true cache_valid_time={{ monsieurbiz_common_cache_valid_time }}
+  when: monsieurbiz_common_update
   tags: [common, update]
 
 - name: Upgrade the server packages
   sudo: yes
   apt: upgrade=yes
+  when: monsieurbiz_common_upgrade
   tags: [common, update]
 
 - name: Install some packages
