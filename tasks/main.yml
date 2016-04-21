@@ -2,19 +2,22 @@
 # tasks file for monsieurbiz.common
 
 - name: Update the server
-  sudo: yes
+  become: yes
+  become_user: root
   apt: update_cache=true cache_valid_time={{ monsieurbiz_common_cache_valid_time }}
   when: monsieurbiz_common_update
   tags: [common, update]
 
 - name: Upgrade the server packages
-  sudo: yes
+  become: yes
+  become_user: root
   apt: upgrade=yes
   when: monsieurbiz_common_upgrade
   tags: [common, update]
 
 - name: Install some packages
-  sudo: yes
+  become: yes
+  become_user: root
   apt: name={{item}} state=latest
   with_items: "{{ monsieurbiz_common_packages }}"
   tags: [common]
