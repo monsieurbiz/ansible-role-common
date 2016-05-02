@@ -26,4 +26,4 @@ monsieurbiz_common_packages:
   - rsync
   - gzip
   - less
-  - gpg
+  - gnupg
