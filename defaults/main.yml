@@ -27,3 +27,5 @@ monsieurbiz_common_packages:
   - gzip
   - less
   - gnupg
+  - gnupg2
+  - silversearcher-ag
