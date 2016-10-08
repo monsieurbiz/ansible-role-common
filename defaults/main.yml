@@ -12,6 +12,8 @@ monsieurbiz_common_upgrade: yes
 
 # Packages list
 monsieurbiz_common_packages:
+  - apt-utils
+  - sudo
   - vim
   - build-essential
   - tmux
