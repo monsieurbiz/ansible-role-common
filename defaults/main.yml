@@ -31,3 +31,4 @@ monsieurbiz_common_packages:
   - gnupg
   - gnupg2
   - silversearcher-ag
+  - unzip
