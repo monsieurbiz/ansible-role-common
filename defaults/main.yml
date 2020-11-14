@@ -35,4 +35,10 @@ monsieurbiz_common_packages:
   - apt-transport-https
   - lsb-release
   - ca-certificates
+  - ca-cacert
   - aptitude
+  - cron
+  - acl
+  - python3
+  - python3-pip
+
